@@ -30,6 +30,22 @@ footer{
 
 }
 
-.footer-icons img{
+@keyframes icons-float {
+    0%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-10px);
+    }
+    70%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.footer-icons: hover footer-icons__img{
     width: 30px;
+    animation: 2s icon-float infinite;
 }
